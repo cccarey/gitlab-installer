@@ -6,6 +6,14 @@ VERSION="el6"
 parts=13
 current=1
 
+if [ ! -z "$1" ]; then
+    current="$1"
+fi
+
+if [ ! -z "$2" ]; then
+    parts="$2"
+fi
+
 while [ $current -le $parts ]; do
     url="$BASE_URL/$VERSION/install-step-`printf "%02d" $current`.sh"
     wget $url
