@@ -25,4 +25,5 @@ done
 current=$start
 while [ $current -le $parts ]; do
     source install-step-`printf "%02d" $current`.sh
+    current=$(( $current + 1 ))
 done
