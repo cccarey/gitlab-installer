@@ -14,5 +14,5 @@ done
 
 current=1
 while [ $current -le $parts ]; do
-    source install-step-`printf "%02d" $current`.sh"
+    source install-step-`printf "%02d" $current`.sh
 done
