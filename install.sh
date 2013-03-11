@@ -4,11 +4,13 @@ BASE_URL="https://raw.github.com/cccarey/gitlab-installer/stepped_install"
 VERSION="el6"
 
 parts=13
-current=1
+start=1
 
 if [ ! -z "$1" ]; then
-    current="$1"
+    start="$1"
 fi
+
+current=1
 
 if [ ! -z "$2" ]; then
     parts="$2"
@@ -20,7 +22,7 @@ while [ $current -le $parts ]; do
     current=$(( $current + 1 ))
 done
 
-current=1
+current=$start
 while [ $current -le $parts ]; do
     source install-step-`printf "%02d" $current`.sh
 done
