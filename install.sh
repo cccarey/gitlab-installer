@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 BASE_URL="https://raw.github.com/cccarey/gitlab-installer/stepped_install"
 VERSION="el6"

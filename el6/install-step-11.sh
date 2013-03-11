@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # Installer for GitLab on RHEL 6 (Red Hat Enterprise Linux and CentOS)
 # mattias.ohlsson@inprose.com
 #
