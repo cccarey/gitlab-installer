@@ -10,7 +10,7 @@ if [ ! -z "$1" ]; then
     start="$1"
 fi
 
-current=1
+current=$start
 
 if [ ! -z "$2" ]; then
     parts="$2"
