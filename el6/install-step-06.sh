@@ -24,8 +24,7 @@ esac
 curl -L get.rvm.io | bash -s stable
 
 # Load RVM
-# source /etc/profile.d/rvm.sh
-/etc/profile.d/rvm.sh
+source /etc/profile.d/rvm.sh
 
 # Install Ruby (use command to force non-interactive mode)
 command rvm install $RUBY_VERSION
