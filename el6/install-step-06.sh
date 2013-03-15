@@ -28,7 +28,8 @@ source /etc/profile.d/rvm.sh
 
 # Install Ruby (use command to force non-interactive mode)
 command rvm install $RUBY_VERSION
-rvm use $RUBY_VERSION
+#rvm use $RUBY_VERSION
+rvm --default use $RUBY_VERSION
 
 # Install core gems
 gem install rails passenger rake bundler grit --no-rdoc --no-ri
