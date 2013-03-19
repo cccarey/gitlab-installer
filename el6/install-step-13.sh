@@ -14,6 +14,10 @@ chkconfig httpd on
 # Start Apache
 service httpd start
 
+# getting error
+# Cannot load /usr/local/rvm/gems/ruby-1.9.3-p327/gems/passenger-3.0.19/ext/apache2/mod_passenger.so into server
+# "failed to map segment from shared object" on
+# see https://groups.google.com/forum/?fromgroups=#!topic/phusion-passenger/_pAIvpeWVfU
 
 echo "### Done ###"
 echo "#"
