@@ -73,9 +73,11 @@ sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
 # Turn off SELinux in this session
 setenforce 0
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 current=$start
 while [ $current -le $parts ]; do
     source install-step-`printf "%02d" $current`.sh
+    cd $DIR
     current=$(( $current + 1 ))
 done
